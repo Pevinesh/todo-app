@@ -1,0 +1,10 @@
+<h1>Are you sure you wanna delete "{{items}}"</h1>
+
+<a href="{% url 'index' %}">cancel</a>
+
+<form method="POST" action="">
+    {%csrf_token%}
+    <input type = "submit" name="confirm">
+
+
+</form>
